@@ -14,38 +14,52 @@ $(document).ready(function() {
     $('#php').hide();
     $('#java').hide();
     $('#csharp').hide();
-    $('#no').show();
+    $('#no').fadeIn();
   } else if (type === 'front') {
-    $('#css').show();
+    $('#css').fadeIn();
     $('#ruby').hide();
     $('#php').hide();
     $('#java').hide();
     $('#csharp').hide();
+    $('#no').hide();
   } else if ((environment === 'big') && (type === 'app')) {
     $('#css').hide();
     $('#ruby').hide();
     $('#php').hide();
-    $('#java').show();
+    $('#java').fadeIn();
+    $('#no').hide();
     $('#csharp').hide();
   } else if ((environment === 'big') && (type === 'back')) {
     $('#css').hide();
     $('#ruby').hide();
     $('#php').hide();
+    $('#no').hide();
     $('#java').hide();
-    $('#csharp').show();
+    $('#csharp').fadeIn();
   } else if ((environment === 'small') && (type === 'app')) {
+    $('#no').hide();
     $('#css').hide();
-    $('#ruby').show();
+    $('#ruby').fadeIn();
     $('#php').hide();
     $('#java').hide();
     $('#csharp').hide();
   } else if ((environment === 'small' ) && (type === 'back')) {
+    $('#no').hide();
     $('#css').hide();
     $('#ruby').hide();
-    $('#php').show();
+    $('#php').fadeIn();
     $('#java').hide();
     $('#csharp').hide();
     }
+
+    if ( color === 'teal')
+    $("body").removeClass().addClass("teal-background");
+    else if (color === 'pink')
+    $("body").removeClass().addClass("pink-background");
+    else if (color === 'orange')
+    $("body").removeClass().addClass("orange-background");
+    else if (color === 'purple')
+    $("body").removeClass().addClass("purple-background");
 
     $('.name').text(name);
 

@@ -6,80 +6,96 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Averia+Sans+Libre|Barrio|Bungee+Shade|Cutive+Mono|Monoton|Sacramento" rel="stylesheet">
     <meta charset="utf-8">
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
     <div class="container">
       <h1>Which Epicodus Track Should You Take?</h1>
-      <form id="coursetracker">
-        <div class="person">
-          <h3>What is your name?</h3>
-          <div class="form-group">
-            <input id="name" class="form-control" type="text">
+      <div class="row">
+        <div class="col-md-5">
+          <form id="coursetracker">
+            <div class="person">
+              <h3>What is your name?</h3>
+              <div class="form-group">
+                <input id="name" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="color">
+              <h3>Pick a color:</h3>
+              <select class="form-control" id="color">
+                 <option value="teal">Teal</option>
+                 <option value="pink">Pink</option>
+                 <option value="orange">Orange</option>
+                 <option value="purple">Purple</option>
+              </select>
+            </div>
+            <div class="computers">
+              <h3>Do you like computers?</h3>
+              <select class="form-control" id="computers">
+                 <option value="yes">Yes</option>
+                 <option value="no">No</option>
+              </select>
+            </div>
+             <div class="environment">
+                <h3>What type of work environment sounds more appealing?</h3>
+                <select class="form-control" id="environment">
+                  <option value="big">Big established businesses</option>
+                  <option value="small">Startups or smaller companies</option>
+               </select>
+             </div>
+             <div class="type">
+               <h3>What type of program would you like to write?</h3>
+               <select class="form-control" id="type">
+                  <option value="app">Apps</option>
+                  <option value="front">Front-end design</option>
+                  <option value="back">Back-end programming</option>
+               </select></br></br>
+             </div>
+          <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-7">
+          <div class="container2">
+             <div id="css">
+                <img src="img/css.png" alt="CSS" />
+                <h3>Congrats <span class="name"></span>, you got CSS & Design!</h3>
+                <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</p>
+              </div>
+              <div id="ruby">
+                <img src="img/ruby.png" alt="Ruby on Rails" />
+                <h3>Congrats <span class="name"></span>, you got Ruby on Rails!</h3>
+                <p>Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. The Ruby programming language is most commonly used with the Ruby on Rails framework. </p>
+                <p>Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. Companies using Ruby and Rails who have hired Epicodus graduates include New Relic, LivingSocial, and SpendWell.</p>
+              </div>
+              <div id="java">
+                <img src="img/java.png" alt="Java" />
+                <h3>Congrats <span class="name"></span>, you got Java!</h3>
+                <p>
+                Java is arguably the most popular programming language today. It's used for everything from web applications to backend services to mobile applications to embedded systems. Students who learn Java programming will be able to create dynamic web applications, and be able continue into our Android track.</p>
+                <p>Companies using Java who have hired Epicodus graduates include Nike and Thetus.</p>
+              </div>
+              <div id="csharp">
+                <img src="img/csharp.png" alt="C Sharp" />
+                <h3>Congrats <span class="name"></span>, you got C#!</h3>
+                <p>The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more.</p>
+                <p>Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment. </p>
+                <p>Companies using C# and .NET who have hired Epicodus graduates include Windsor and Incomm.</p>
+              </div>
+              <div id="php">
+                <img src="img/php.png" alt="PHP" />
+                <h3>Congrats <span class="name"></span>, you got PHP!</h3>
+                <p>PHP is a popular programming language used for web development, especially for content-heavy websites. It's most commonly used with content management systems like WordPress, Drupal, and Joomla, but is also used in many web applications and backends as well. Students who learn to code in PHP will be able to collect form data, generate dynamic page content, send and receive cookies, and much more.</p>
+                <p>Intel, Metal Toad, and OpenSesame are all companies that use PHP and have hired Epicodus graduates in the past. </p>
+              </div>
+              <div id="no">
+                <img src="img/no.gif" alt="zoolander gif" />
+                <h3>Sorry <span class="name"></span>, sounds like programmings not for you!</h3>
+              </div>
           </div>
         </div>
-        <div class="computers">
-          <h3>Do you like computers?</h3>
-          <select class="form-control" id="computers">
-             <option value="yes">Yes</option>
-             <option value="no">No</option>
-          </select>
-        </div>
-         <div class="environment">
-            <h3>What type of work environment sounds more appealing?</h3>
-            <select class="form-control" id="environment">
-              <option value="big">Big established businesses</option>
-              <option value="small">Startups or smaller companies</option>
-           </select>
-         </div>
-         <div class="type">
-           <h3>What type of program would you like to write?</h3>
-           <select class="form-control" id="type">
-              <option value="app">Apps</option>
-              <option value="front">Front-end design</option>
-              <option value="back">Back-end programming</option>
-           </select></br></br>
-         </div>
-      <button type="submit" class="btn">Submit</button>
-     </form>
-     <div class="container">
-     <div id="css">
-        <img src="img/css.png" alt="CSS" />
-        <h3>Congrats <span class="name"></span>, you got CSS & Design!</h3>
-        <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</p>
       </div>
-      <div id="ruby">
-        <img src="img/ruby.png" alt="Ruby on Rails" />
-        <h3>Congrats <span class="name"></span>, you got Ruby on Rails!</h3>
-        <p>Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. The Ruby programming language is most commonly used with the Ruby on Rails framework. </p>
-        <p>Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. Companies using Ruby and Rails who have hired Epicodus graduates include New Relic, LivingSocial, and SpendWell.</p>
-      </div>
-      <div id="java">
-        <img src="img/java.png" alt="Java" />
-        <h3>Congrats <span class="name"></span>, you got Java!</h3>
-        <p>
-        Java is arguably the most popular programming language today. It's used for everything from web applications to backend services to mobile applications to embedded systems. Students who learn Java programming will be able to create dynamic web applications, and be able continue into our Android track.</p>
-        <p>Companies using Java who have hired Epicodus graduates include Nike and Thetus.</p>
-      </div>
-      <div id="csharp">
-        <img src="img/csharp.png" alt="C Sharp" />
-        <h3>Congrats <span class="name"></span>, you got C#!</h3>
-        <p>The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more.</p>
-        <p>Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment. </p>
-        <p>Companies using C# and .NET who have hired Epicodus graduates include Windsor and Incomm.</p>
-      </div>
-      <div id="php">
-        <img src="img/php.png" alt="PHP" />
-        <h3>Congrats <span class="name"></span>, you got PHP!</h3>
-        <p>PHP is a popular programming language used for web development, especially for content-heavy websites. It's most commonly used with content management systems like WordPress, Drupal, and Joomla, but is also used in many web applications and backends as well. Students who learn to code in PHP will be able to collect form data, generate dynamic page content, send and receive cookies, and much more.</p>
-        <p>Intel, Metal Toad, and OpenSesame are all companies that use PHP and have hired Epicodus graduates in the past. </p>
-      </div>
-      <div id="no">
-        <img src="img/no.gif" alt="zoolander gif" />
-        <h3>Sorry <span class="name"></span>, sounds like programmings not for you!</h3>
-      </div>
-    </div>
     </div>
   </body>
 </html>
