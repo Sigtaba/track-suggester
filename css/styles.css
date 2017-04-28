@@ -59,7 +59,7 @@ img {
 }
 
 .col-md-7 p {
-  font-family: 'Share Tech Mono', 'monospace';
+  font-family: 'Share Tech Mono', monospace;
   font-size: 15pt;
 }
 
@@ -74,7 +74,31 @@ img {
   font-size: 25pt;
 }
 
-h1 {
+.jumbotron {
   font-family: 'Bungee Shade', cursive;
-  font-size: 70px;
+  font-size: 60px;
+}
+
+.btn {
+background-color: #8269E7;
+width: 50%;
+text-align: center;
+color: white;
+font-size: 30px;
+font-family: 'Baloo', cursive;
+margin-left: auto;
+margin-right: auto
+}
+
+.btn:hover {
+  background-color: #F4338C;
+  color: white;
+}
+
+select {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+input {
+  font-family: 'Share Tech Mono', monospace;
 }
