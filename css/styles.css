@@ -19,8 +19,22 @@
 }
 
 img {
-  width: 300px;
-  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#no img {
+  width: 500px;
+  padding-top: 100px;
+}
+
+#php img {
+  width: 500px;
+}
+
+#java img {
+  width: 400px;
 }
 
 .container {
@@ -28,6 +42,22 @@ img {
   padding: 40px;
   margin-top: 30px;
   background-color: white;
+}
+
+.col-md-7 p {
+  font-family: 'Share Tech Mono', 'monospace';
+  font-size: 15pt;
+}
+
+.col-md-7 h3 {
+  font-family: 'Baloo', cursive;
+  font-size: 30pt;
+  text-align: center;
+}
+
+.col-md-5 h3 {
+  font-family: 'VT323', 'monospace';
+  font-size: 25pt;
 }
 
 h1 {
