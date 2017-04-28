@@ -6,8 +6,16 @@ $(document).ready(function() {
     var environment = $("#environment").val();
     var type = $("#type").val();
     var language = $("#language").val();
+    var computers = $("#computers").val();
 
-    if (type === 'front') {
+    if (computers === 'no') {
+    $('#css').hide();
+    $('#ruby').hide();
+    $('#php').hide();
+    $('#java').hide();
+    $('#csharp').hide();
+    $('#no').show();
+  } else if (type === 'front') {
     $('#css').show();
     $('#ruby').hide();
     $('#php').hide();
@@ -40,5 +48,6 @@ $(document).ready(function() {
     }
 
     $('.name').text(name);
+
   })
 });

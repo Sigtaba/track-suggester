@@ -16,16 +16,15 @@
         <div class="person">
           <h3>What is your name?</h3>
           <div class="form-group">
-            <label for="name">What is your name?</label>
             <input id="name" class="form-control" type="text">
           </div>
         </div>
-        <div class="container">
-          <h1>What's your favorite color?</h1>
-          <p>Click a button to choose what color you'd like this page to be:</p>
-          <button class="btn btn-success" id="green">Green</button>
-          <button class="btn btn-warning" id="yellow">Yellow</button>
-          <button class="btn btn-danger" id="red">Red</button>
+        <div class="computers">
+          <h3>Do you like computers?</h3>
+          <select class="form-control" id="computers">
+             <option value="yes">Yes</option>
+             <option value="no">No</option>
+          </select>
         </div>
          <div class="environment">
             <h3>What type of work environment sounds more appealing?</h3>
@@ -40,18 +39,11 @@
               <option value="app">Apps</option>
               <option value="front">Front-end design</option>
               <option value="back">Back-end programming</option>
-           </select>
+           </select></br></br>
          </div>
-         <div class="language">
-           <h3>Pick one:</h3>
-           <select class="form-control" id="language">
-              <option value="css">Sass</option>
-              <option value="java">Andriod</option>
-              <option value="php">Wordpress</option>
-           </select>
-         </div></br></br>
-       <button type="submit" class="btn">Show Results</button>
+      <button type="submit" class="btn">Submit</button>
      </form>
+     <div class="container">
      <div id="css">
         <img src="img/css.png" alt="CSS" />
         <h3>Congrats <span class="name"></span>, you got CSS & Design!</h3>
@@ -83,6 +75,11 @@
         <p>PHP is a popular programming language used for web development, especially for content-heavy websites. It's most commonly used with content management systems like WordPress, Drupal, and Joomla, but is also used in many web applications and backends as well. Students who learn to code in PHP will be able to collect form data, generate dynamic page content, send and receive cookies, and much more.</p>
         <p>Intel, Metal Toad, and OpenSesame are all companies that use PHP and have hired Epicodus graduates in the past. </p>
       </div>
+      <div id="no">
+        <img src="img/no.gif" alt="zoolander gif" />
+        <h3>Sorry <span class="name"></span>, sounds like programmings not for you!</h3>
+      </div>
+    </div>
     </div>
   </body>
 </html>

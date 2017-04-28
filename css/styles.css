@@ -1,3 +1,15 @@
-#css, #ruby, #java, #csharp, #php {
+#css, #ruby, #java, #csharp, #php, #no {
   display: none;
+}
+
+.green-background {
+  background-color: green;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+.red-background {
+  background-color: red;
 }
