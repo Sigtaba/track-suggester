@@ -14,6 +14,7 @@ $(document).ready(function() {
     $('#php').hide();
     $('#java').hide();
     $('#csharp').hide();
+    $('#code').hide();
     $('#no').fadeIn();
   } else if (type === 'front') {
     $('#css').fadeIn();
@@ -22,6 +23,7 @@ $(document).ready(function() {
     $('#java').hide();
     $('#csharp').hide();
     $('#no').hide();
+    $('#code').hide();
   } else if ((environment === 'big') && (type === 'app')) {
     $('#css').hide();
     $('#ruby').hide();
@@ -29,6 +31,7 @@ $(document).ready(function() {
     $('#java').fadeIn();
     $('#no').hide();
     $('#csharp').hide();
+    $('#code').hide();
   } else if ((environment === 'big') && (type === 'back')) {
     $('#css').hide();
     $('#ruby').hide();
@@ -36,6 +39,7 @@ $(document).ready(function() {
     $('#no').hide();
     $('#java').hide();
     $('#csharp').fadeIn();
+    $('#code').hide();
   } else if ((environment === 'small') && (type === 'app')) {
     $('#no').hide();
     $('#css').hide();
@@ -43,6 +47,7 @@ $(document).ready(function() {
     $('#php').hide();
     $('#java').hide();
     $('#csharp').hide();
+    $('#code').hide();
   } else if ((environment === 'small' ) && (type === 'back')) {
     $('#no').hide();
     $('#css').hide();
@@ -50,6 +55,7 @@ $(document).ready(function() {
     $('#php').fadeIn();
     $('#java').hide();
     $('#csharp').hide();
+    $('#code').hide();
     }
 
     if ( color === 'teal')
